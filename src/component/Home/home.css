@@ -6,3 +6,9 @@
 justify-content: center
   }
 }
+
+@media(min-width:375px){
+ .my-image{
+   width:15rem;
+ }
+}

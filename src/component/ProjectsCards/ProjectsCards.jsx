@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import github from "../../assets/images/github-icon.png"
+import codeicon from "../../assets/images/icon-code-0.jpg"
 
 function ProjectsCards(props) {
   return (
@@ -8,8 +10,8 @@ function ProjectsCards(props) {
       <h1 className='text-2xl p-1'>{props.projectName}</h1>
 
       <div className='flex items-center justify-center my-7 font-bold '>
-        <button><Link to={props.githubLink}><img className='h-12' src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" /></Link></button>
-        <button><Link to={props.Linking}><img className='h-12' src="https://icon-library.com/images/icon-code/icon-code-0.jpg" alt="Code Icon" /></Link></button>
+        <button><Link to={props.githubLink}><img className='h-12' src={github} alt="GitHub Logo" /></Link></button>
+        <button><Link to={props.Linking}><img className='h-12' src={codeicon} alt="Code Icon" /></Link></button>
       </div>
     </div>
   );
